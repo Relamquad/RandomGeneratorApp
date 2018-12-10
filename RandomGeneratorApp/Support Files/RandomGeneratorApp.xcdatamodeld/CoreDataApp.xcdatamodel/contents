@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ModelA" representedClassName="ModelA" syncable="YES" codeGenerationType="class">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ModelB" inverseName="relationship" inverseEntity="ModelB" syncable="YES"/>
+    </entity>
+    <entity name="ModelB" representedClassName="ModelB" syncable="YES" codeGenerationType="class">
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ModelA" inverseName="relationship" inverseEntity="ModelA" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ModelA" positionX="-273.67578125" positionY="-8.3984375" width="128" height="75"/>
+        <element name="ModelB" positionX="-27.27734375" positionY="10.0703125" width="128" height="58"/>
+    </elements>
+</model>
