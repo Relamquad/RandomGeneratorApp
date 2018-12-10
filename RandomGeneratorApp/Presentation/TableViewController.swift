@@ -53,7 +53,6 @@ class TableViewController: UITableViewController,UIGestureRecognizerDelegate{
     }
     
     @objc func refreshList() {
-        mySortArray.append("NEW")
         refreshControl?.endRefreshing()
         self.tableView.reloadData()
         print("RELOADED")
